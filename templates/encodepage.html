@@ -1,0 +1,84 @@
+<html class="content">
+    <head>
+        <link rel='shortcut icon' href="uploads/download.jpg" type='image/png' />
+    </head>
+    <div class="content">
+        <a href="/"><img src="uploads/download.jpg" alt="momo" class="image"></a> <!-- Image as hyperlink -->
+    </div>
+    <form method=post enctype="multipart/form-data">
+        <!-- <div>
+            <p id="text">Enter Message</p>
+        </div>
+        <div id="message">
+            <textarea id="msgbox" name="msg" rows="4" cols="50" autofocus>
+            </textarea>
+        </div> -->
+        <div>
+            <p id="text">Upload Text File</p>
+        </div>
+        <div>
+            <input type="file" name="file" id="filebox" accept=".txt" required>
+        </div>
+        <!-- <div class="custom-file mt-1 mb-5">
+            <input type="file" id="filebox" class="custom-file-input" name=file accept=".txt" required>
+            <label class="custom-file-label" for="myfile">Choose Text File</label>
+        </div> -->
+        <div>
+            <p id="text">Password</p>
+        </div>
+        <div id="password">
+            <textarea id="pasbox" name="pas" rows="2" cols="30" autofocus>
+            </textarea>
+        </div>
+        <div>
+            <button id="submitbutt" type=submit >Download</button>
+        </div>
+    </form>
+    <br>
+    <p id="text" style="font-size: 1rem;">Type -> Download -> Send!</p>
+
+</html>
+
+<style>
+    
+    .image{
+        height: 40%;
+    }
+    .content {
+        list-style-position: inside;
+        text-align: center;
+        margin: auto;
+        align-self: center;
+        font-family: Charcoal, sans-serif;
+        background-color: #262626;
+
+    }
+    #message{
+        color: white;
+        font-size: 150%;
+        font-weight: bold;
+        font-family: Sans-serif;
+    }
+    #msgbox{
+        background-color:#262626 ;
+        border:3px solid white;
+        color: white;
+        font-size: 20px;
+
+    }
+    #text{
+        color: white;
+        font-size: 30px;
+    }
+    #submitbutt{
+        background-color: white;
+        margin-top: 30px;
+        height: 50px;
+        width: 90px;
+        cursor: pointer;
+        color: #262626;
+        border:2px solid white;
+        font-family: Sans-serif;
+        border-radius: 10px;
+    }
+</style>

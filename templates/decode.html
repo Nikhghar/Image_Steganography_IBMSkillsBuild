@@ -1,0 +1,105 @@
+<html class="content">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #text {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        #pasbox {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        #submitbutt {
+            background-color: white;
+            color: #4caf50;
+            padding: 10px 15px;
+            border: 2px solid #4caf50;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #submitbutt:hover {
+            background-color: #4caf50;
+            color: white;
+        }
+    </style>
+    </head>
+    <div class="content">
+        <a href="/"><img src="uploads/new1.png" alt="momo" class="image"></a>
+    </div>
+    <form method="post" action="/decode">
+        <div>
+            <p id="text">Password</p>
+        </div>
+        <div id="password">
+            <input type="password" name="pas" id="pasbox" />
+        </div>
+        <div>
+            <button id="submitbutt" type="submit">Decode</button>
+        </div>
+    </form>
+    <br>
+    <h2>Decryption Result</h2>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <p style="color: white; font-size: 1.5rem;">{{ msg }}</p>
+    {% endif %}
+    <!-- <p id="text" style="font-size: 1rem;">Type -> Decode -> View!</p> -->
+</html>
+
+<style>
+    .image{
+        height: 40%;
+    }
+    .content {
+        list-style-position: inside;
+        text-align: center;
+        margin: auto;
+        align-self: center;
+        font-family: Charcoal, sans-serif;
+        background-color: #262626;
+
+    }
+    #message{
+        color: white;
+        font-size: 150%;
+        font-weight: bold;
+        font-family: Sans-serif;
+    }
+    h2 {
+            color: white;  /* Set the color of the h2 element to white */
+    }
+    p{
+        color: white;
+        font-size: 1.2rem; /* Set the font size */
+    }
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    hr{
+        margin: 5rem;
+    }
+</style>
